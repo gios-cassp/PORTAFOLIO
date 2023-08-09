@@ -36,32 +36,32 @@ nav {
 
 /*Banner principal + contenido*/
 
-.banner{
-    width: 100%;
-    height: 768px;
-    background-image: url(/assets/img/BANNER.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.banner {
+    position: relative;
+    background: linear-gradient(to right, #1c335e, #071E34); /* Degradado de azules oscuros */
+    height: 100vh;
+    color: #fff;
+    display: flex;    
 }
 
-.tittle {
+.banner-content {
+    max-width: 600px;
+    padding: 20px;
+    margin-left: 150px;
+    
+}
+
+h1 {
     color: aliceblue;
     max-width: 1200px;
     margin: auto;
     padding: 150px 0px 0px 0px;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
-.banner> h2{
+.banner-content>h2{
     color: aliceblue;
-    max-width: 1200px;
-    margin: auto;
-    font-size: 22px;
-    padding: 20px 0px 0px 0px;
-}
-
-.banner> h3{
-    color: #D54C37;
     max-width: 1200px;
     margin: auto;
     font-size: 22px;
@@ -89,6 +89,7 @@ nav {
     padding: 0px;
 }
 
+
 .btns{
     max-width: 1200px;
     margin: auto;
@@ -115,6 +116,20 @@ nav {
     cursor: pointer;
     color: #ffffff;
     background-color:#b71f07;
+}
+
+.banner-image {
+    flex: 1;
+    display: flex;
+    
+    align-items: center;
+    padding-right: 50px; /* Espacio a la derecha */
+}
+
+.banner-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
 }
 
 
